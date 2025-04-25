@@ -31,11 +31,8 @@ start();
     
     <p v-if="guessNumber === null"></p>
     <p v-else>Du tippet {{ guessNumber }}.<br/> </p>
-   
-
+    
     <p v-if="guessNumber === null">Gjett et number </p>
-      
-   
     <p v-else-if="guessNumber === secretNumber">Rikitig svar</p>
     <p v-else-if="guessNumber < secretNumber">Du har tippet for lavt.</p>
     <p v-else-if="guessNumber > secretNumber">Du har tippet for høyt.</p>
