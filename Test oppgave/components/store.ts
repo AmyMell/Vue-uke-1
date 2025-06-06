@@ -4,7 +4,6 @@ type Recipe = {
   id?: number
   title: string
   tags: string[]
-  // add other fields as needed
 }
 
 export const useRecipeStore = defineStore('recipe', {
