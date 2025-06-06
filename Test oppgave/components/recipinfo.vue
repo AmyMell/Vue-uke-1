@@ -20,7 +20,6 @@
 </template>
 
 <script setup lang="ts">
-
 const props = defineProps({
   recipe: Object
 })

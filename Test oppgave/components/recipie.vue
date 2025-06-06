@@ -12,23 +12,23 @@
       <label for="instructions">Instruksjoner</label>
       <input id="instructions" v-model="instructions" required/>
     </div>
-    <IngredientListEditor :ingredients="ingredients" @update-ingredients="updateIngredients" />
+    <IngredientListeEditor :ingredients="ingredients" @update-ingredients="updateIngredients" />
     
     <button type="submit">Legg til oppskrift</button>
   </form>
 </template>
 
 <script setup lang="ts">
-
-import IngredientListEditor from './ingridi.vue'
-
-
-const emit = defineEmits(['submit-recipe'])
-
 const title = ref('')
 const tagsInput = ref('')
 const ingredients = ref<string[]>([])
 const instructions = ref('')
+
+import IngredientListeEditor from './ingridi.vue'
+
+
+const emit = defineEmits(['submit-recipe'])
+
 
 function updateIngredients(newIngredients: string[]) {
   ingredients.value = newIngredients

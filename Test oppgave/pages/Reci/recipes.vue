@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-
 import { useRecipeStore } from '../../components/store'
 import RecipeCard from '../../components/recipinfo.vue'
 

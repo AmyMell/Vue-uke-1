@@ -7,9 +7,6 @@
 </template>
 
 <script setup lang="ts">
-
-
-
 import { useRecipeStore } from '../../components/store'
 import RecipeForm from '../../components/recipie.vue'
 
