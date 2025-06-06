@@ -8,7 +8,6 @@ const guessNumberInput = ref<number | null>(null);
 const secretNumber = ref<number>(generateSecretNumber());
 const Attempts = ref<number>(0);
 
-
 const Restart = () => {
   guessNumber.value = null;
   guessNumberInput.value = null;
@@ -16,14 +15,12 @@ const Restart = () => {
   Attempts.value = 0;
 };
 
-
 const Svar = () => {
   if (guessNumberInput.value !== null) {
     guessNumber.value = guessNumberInput.value;
     Attempts.value += 1;
   }
 };
-
 
 const Check = computed(() => {
   if (guessNumber.value === null) {
