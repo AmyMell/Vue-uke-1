@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="(ingredient, index) in localIngredients" :key="index">
-      <input v-model="localIngredients[index]" />
+      <input v-model="localIngredients[index]" required/>
       <button @click="removeIngredient(index)">Fjern</button>
     </div>
     <button type="button" @click="addIngredient">Legg til ingrediens</button>

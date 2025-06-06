@@ -6,7 +6,7 @@
     </div>
     <div>
       <label for="tags">Tags</label>
-      <input id="tags" v-model="tagsInput" placeholder="Frokost" />
+      <input id="tags" v-model="tagsInput" required/>
     </div>
     <div>
       <label for="instructions">Instruksjoner</label>
