@@ -1,4 +1,3 @@
-import { defineStore } from 'pinia'
 
 type Recipe = {
   id?: number
