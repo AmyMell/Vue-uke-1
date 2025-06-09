@@ -27,7 +27,14 @@ const instructions = ref('')
 import IngredientListeEditor from './ingridi.vue'
 
 
-const emit = defineEmits(['submit-recipe'])
+const emit = defineEmits<{
+  (e: 'submit-recipe', payload: {
+    title: string,
+    tags: string[],
+    ingredients: string[],
+    instructions: string
+  }): void
+}>()
 
 
 function updateIngredients(newIngredients: string[]) {
